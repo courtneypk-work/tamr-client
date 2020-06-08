@@ -21,4 +21,4 @@ For example, if `base_path` is `/api/versioned/v1/` (the default), and you want 
 
 There are various APIs outside the `/api/versioned/v1/` prefix that are often useful or necessary to call - e.g. `/api/service/health`, or other un-versioned / unsupported APIs. To call a custom endpoint *outside* the Tamr API, use the `client.request()` method, and provide an endpoint described by an *absolute* path (a path starting with `/`). For example, to get `/api/service/health` (no matter what `base_path` is), call `client.request()` with `/api/service/health` as the endpoint. The Client will ignore `base_path` and send the request directly against the absolute path provided.
 
-For additional detail, see [Raw HTTP requests and Unversioned API Access](<user-guide/advanced-usage:Raw HTTP requests and Unversioned API Access>)
+For additional detail, see [Raw HTTP requests and Unversioned API Access](https://github.com/Datatamer/tamr-client/blob/master/docs/user-guide/advanced-usage.md#raw-http-requests-and-unversioned-api-access)
